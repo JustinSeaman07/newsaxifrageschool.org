@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <meta property="og:image" content="images/logo.png" />
+<meta property="og:url" content="http://www.saxifrageschool.org" />
+<meta property="og:description" content=" A higher education innovation laboratory. Learn to Build, Program and Grow; ask big questions and discover what you love to do." />
+<meta property="og:title" content="The Saxifrage School" />
+
+  <title>The Saxifrage School</title>
+
+  
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/typicons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Petrona' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+    google.load("feeds", "1");
+    google.setOnLoadCallback(initialize);
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/tumblr/EJwT");
+      feed.setNumEntries(6);
+      feed.setResultFormat(google.feeds.Feed.JSON_FORMAT);
+      feed.load(function(result) {
+        // $.each(result.feed.entries, function(){
+        //     $("section#blog div.center").appendChild("<div>this is stuff</div>");
+        //     // console.log("eq: "+);
+        //     console.log($(this));
+        //   });
+        if (!result.error) 
+              {
+           var container = document.getElementById("blogfeed");
+
+          for (var i = 0; i < result.feed.entries.length; i++) 
+          {  
+            var entry = result.feed.entries[i];
+            var last = "";
+            if ((i+1) % 3 == 0) {
+              last = " last";
+            }
+            var article = document.createElement("article");
+            article.innerHTML = '<div class="blog_entry one_third'+ last +'"><h3><a href="' + entry.link + '">' + entry.title + '</a><cite> ' + entry.author + '</cite></h3><p>' + entry.contentSnippet + '</p></div>';
+            container.appendChild(article);
+          }
+        }
+      });
+    }
+
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27226011-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+<section id="nav">
+
+	<div class="row">
+		<div class="large-4 columns">
+			<ul class="navigation hide-for-small">
+				<li><a class="scroll" href="#about-nav">ABOUT</a></li>
+				<li><a class="scroll" href="#classes-nav">CLASSES</a></li>
+			</ul>
+		</div>
+		
+		<div class="large-4 columns text-center">
+			<a href="index.html"><h5 id="logo"><img src="img/newlogo.png"></a></h5>
+		</div>
+		
+		<div class="large-4 columns">
+			<ul class="navigation hide-for-small">
+				<li><a class="scroll" href="#donate-nav">DONATE</a></li>
+				<li><a class="scroll" href="https://medium.com/the-saxifrage-school">BLOG</a></li>
+			</ul>
+		</div>
+		
+		<div class="open-menu show-for-small right"><i class="typcn typcn-th-menu"></i></div>
+	</div>
+	
+	<div class="row">
+		<div class="large-12 columns mobile-nav">
+			<ul class="navigation">
+				<li><a class="scroll" href="#about-nav">ABOUT</a></li>
+				<li><a class="scroll" href="#classes-nav">CLASSES</a></li>
+				<li><a class="scroll" href="#donate-nav">DONATE</a></li>
+				<li><a class="scroll" href="https://medium.com/the-saxifrage-school">BLOG</a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+
+</section>
+
+<section id="home">
+
+		<div id="home-slider">
+			<ul class="slides">
+				<li>
+					<div class="row">
+						<div class="large-12 columns">
+							<div class="tile-wrapper">
+								<div class="slider-tile">
+									<img src="img/monologo.png">
+									<h5></h5>
+									<div class="hr large-1 small-3"></div>
+									<div class="biline">Working to lower costs, re-think the campus, and reconcile theory with practice.</div>
+								</div>
+								<br><br>
+								<div id="mc_embed_signup">
+					            <form action="http://saxifrageschool.us5.list-manage1.com/subscribe/post?u=1a512028b208a111fcf2165f7&amp;id=e0a2dc0e55" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					            <div class="clear" align="center"><input type="submit" value="Get Updates" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					           </form>
+			      			</div>
+
+
+							</div>
+						</div>
+					</div>
+					<img class="slider-bg" alt="Bridge Image" src="img/bridge.png" />
+				</li>
+
+				<li>
+					<div class="row">
+						<div class="large-12 columns">
+							<div class="tile-wrapper">
+								<div class="slider-tile">
+									<img src="img/monologo.png">
+									<div class="hr large-1 small-3"></div>
+									<div class="biline">Classes in web development, carpentry, agriculture, graphic design, philosophy, writing, etc.</div>
+								</div><br><br>
+							<div id="mc_embed_signup">
+					            <form action="http://saxifrageschool.us5.list-manage1.com/subscribe/post?u=1a512028b208a111fcf2165f7&amp;id=e0a2dc0e55" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+					            <div class="clear" align="center"><input type="submit" value="Get Updates" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+					           </form>
+			      			</div>
+
+							</div>
+
+
+						</div>
+
+						
+
+
+					</div>
+					<img class="slider-bg" alt="Slider Image" src="img/chairs.png" />
+				</li>
+				
+				
+			</ul>
+		</div>
+
+
+</section>
+
+<a id="about-nav"></a>
+<section id="about" class="pad-large">
+	<div class="row">
+		<div class="large-12 columns text-center">
+			<div class="page-header pad-bottom">
+				<div class="box-heading">
+					THE BIG IDEA
+				</div>
+				<h1>A HIGHER ED. LABORATORY</h1>
+				<div class="hr large-1 small-3"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="large-12 columns">
+			<p id="about-text">
+				About five years ago we started thinking about some big problems. We saw students lives stifled by the $1 Trillion in college debt, the lack of connection to communities, and the disconnect between theory and practice. After four years of volunteer development, the Saxifrage School is now up and running. We talk about this current stage of our work as a "higher education laboratory". We come up with new ideas on how to do college better and test them out. Over <a href="https://medium.com/the-saxifrage-school/c17dabbc3ee9">the last year</a> we have <a href="http://saxifrageschool.tumblr.com/post/33795154651/the-nomadic-hq-finale">chosen a campus</a> neighborhood, held over a dozen classes, launched the <a href="http://www.thepghforum.com/">Pittsburgh Forum</a>, worked on <a href="http://remakelearning.org/blog/2013/06/10/finding-student-voice-in-school-reform-debate/">student-voice</a> research with the Sprout Fund, developed the <a href="https://medium.com/the-saxifrage-school/47c8b05464cd">Askr</a> concept, and launched <a href="http://www.devyear.com">Dev.Year</a>.
+
+				It's exciting to think that we have grown enough that, if a student wanted, they could study with us full-time. The current cost of a full course load (four twelve-week classes) would be about $1800 per semester. Although we are not a "college" and do not offer credit, we do offer learners the resources and community they need to begin their life's work. By lowering costs and re-thinking the campus we are able to focus on preparing students to make what is valuable <em>and</em> to question the value of what is made. Throughout its history our effort has been supported by hundreds of volunteers and thoughtful students. Considering joining our work by <a href="#donate">donating</a>, <a href="#contact">writing us</a>, or taking an <a href="#classes">upcoming course</a>. Join us in making sure, as Thoreau says in Walden, that we <em>"do not play life, or study it merely, while the community supports [us] at this expensive game, but earnestly live it from beginning to end."</em>
+
+			</p>
+		</div>
+		
+	<!--BEGIN ROW OF TEAM-->
+	<div class="row">
+				<h5 align="center">TEAM</h5></a>
+		<div class="large-3 columns text-center">
+			<div class="team-member">
+				<!--<div class="team-img-wrapper">
+					<div class="team-img-holder">
+						<img alt="Team Image" src="img/tim.png" />
+					</div>
+				</div>-->
+				<h6>TIMOTHY <br>COOK</h6>
+				<span>Founding Director</span>
+				<div class="hr large-2 small-1"></div>
+				<ul class="team-social">
+					<li><a href="https://www.twitter.com/timothyfcook/"><i class="typcn typcn-social-twitter-circular"></i></a></li>
+					<li><a href="https://www.gittip.com/timothyfcook/"><i class="typcn typcn-heart"></i></a></li>
+					<li><a href="https://medium.com/@timothyfcook"><i class="typcn typcn-pencil"></i></a></li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="large-3 columns text-center">
+			<div class="team-member">
+
+				<h6>JUSTIN SEAMAN</h6>
+				<span>Operations</span>
+				<div class="hr large-2 small-1"></div>
+				<ul class="team-social">
+					<li><a href="https://twitter.com/Justin__Seaman"><i class="typcn typcn-social-twitter-circular"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="large-3 columns text-center">
+			<div class="team-member">
+				<h6>Andrew Heffner</h6>
+				<span>Campus Partnerships</span>
+				<div class="hr large-2 small-1"></div>
+				<ul class="team-social">
+					<li><a href="twitter.com/andrewbheffner"><i class="typcn typcn-social-twitter-circular"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="large-3 columns text-center">
+			<div class="team-member">
+				<h6>You?</h6><br>
+				<span>Hiring for Dev.Year Lead Facilitator</span>
+				<div class="hr large-2 small-1"></div>
+				<ul class="team-social">
+					<li><a href="#"><i class="typcn typcn-social-twitter-circular"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</div><br><br><br>
+	<!--END ROW OF TEAM-->
+	<!--BEGIN 2ND ROW OF TEAM-->
+	<div class="row">
+		<div class="large-3 columns text-center">
+			<div class="team-member">
+				<h6>CHAD WHITACRE</h6>
+				<span>Advisor <br>Founder of Gittip</span>
+				<div class="hr large-2 small-1"></div>
+				<ul class="team-social">
+					<li><a href="https://www.twitter.com/whit537/"><i class="typcn typcn-social-twitter-circular"></i></a></li>
+					<li><a href="https://www.gittip.com/whit537/"><i class="typcn typcn-heart"></i></a></li>
+					<li><a href="https://medium.com/@whit537"><i class="typcn typcn-pencil"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="large-3 columns text-center">
+			<div class="team-member">
+				<h6>JAMES TURNSHEK</h6>
+				<span>Advisor<br>
+					Engineer at IBM
+				</span>
+				<div class="hr large-2 small-1"></div>
+				<ul class="team-social">
+					<li><a href="https://www.gittip.com/turnshek/"><i class="typcn typcn-heart"></i></a></li>
+					<li><a href="https://github.com/turnshek"><i class="typcn typcn-social-github"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="large-3 columns text-center">
+			<!--<div class="team-member">
+				<div class="team-img-wrapper">
+					<div class="team-img-holder">
+						<img alt="Team Image" src="http://placehold.it/160x160" />
+					</div>
+				</div>
+				<h6>ABBY HICKS</h6>
+				<span>Developer</span>
+				<div class="hr large-2 small-1"></div>
+				<ul class="team-social">
+					<li><a href="#"><i class="typcn typcn-social-twitter-circular"></i></a></li>
+					<li><a href="#"><i class="typcn typcn-social-facebook-circular"></i></a></li>
+					<li><a href="#"><i class="typcn typcn-social-dribbble-circular"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="large-3 columns text-center">
+			<div class="team-member">
+				<div class="team-img-wrapper">
+					<div class="team-img-holder">
+						<img alt="Team Image" src="http://placehold.it/160x160" />
+					</div>
+				</div>
+				<h6>TODD MARSH</h6>
+				<span>Super Best Friend</span>
+				<div class="hr large-2 small-1"></div>
+				<ul class="team-social">
+					<li><a href="#"><i class="typcn typcn-social-twitter-circular"></i></a></li>
+					<li><a href="#"><i class="typcn typcn-social-facebook-circular"></i></a></li>
+					<li><a href="#"><i class="typcn typcn-social-dribbble-circular"></i></a></li>
+				</ul>
+			</div>
+		</div>-->
+		
+	</div>
+	<!--END 2ND ROW OF TEAM-->
+
+</section>
+
+<section id="quote-divider">
+	<div class="row">
+		<div class="large-8 large-centered columns">
+			<h4 class="text-white">"If you want to build a ship, don’t drum up the men to gather wood, divide the work, and give orders. Instead teach them to yearn for the vast & endless sea." <br>&#8212;Antoine de Saint Exup&eacute;ry</h4>
+			<div class="thick-hr large-3"></div>
+			<a href="apply.html"><div class="btn-wrapper"><div class="btn">SIGN UP FOR A COURSE</div></div></a>
+			<a target="_blank" href="https://twitter.com/intent/user?screen_name=saxifrageschool"><div class="btn-wrapper"><div class="btn"><i class="typcn typcn-social-twitter"></i>FOLLOW</div></div></a>
+		</div>
+	</div>
+</section>
+
+<a id="program-nav"></a>
+<section id="program" class="pad-large">
+
+	<div class="row">
+		<div class="large-12 columns text-center">
+			<div class="page-header pad-bottom">
+				<div class="box-heading">
+					THINGS YOU CAN LEARN WITH US
+				</div>
+				<h1>THE COURSES</h1>
+				<p>Instead of a schedule of classes, we'll put you into a community of developers, give you a fieldbook, and help you build projects.</p>
+				<div class="hr large-1 small-3"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row services-row">
+		<h3>THE COMMUNITY</h3>
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-social-github"></i>
+				<h5>JOIN</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					Join a team and start learning together. Join the broader community by getting active on GitHub, mailing lists, twitter, and IRC. Attend Meetups, user groups, and conferences with your team. We'll have over 50 developers join us throughout the year, and you'll get to help set the weekly schedules.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-user"></i>
+				<h5>MENTOR</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					Be mentored and mentor others. Your team will meet weekly with a mentor to set goals and celebrate accomplishments. They will work closely with you, providing resources and inspiration.  They're learning too, but will be there with advice and help when you need it.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-beer"></i>
+				<h5>FEAST</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					We'll hold two weekly meals and invite guest experts in to talk about their favorite subjects. Talk SASS over stew and privacy over pancakes. We'll discuss the schedule of a third weekly meal, allowing you to customize the year based on what your team needs.
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="row services-row">
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-spanner"></i>
+				<h5>BUILD</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					Start by working on small projects to serve needs in the community. Take on increasingly challenging work with the help of experienced collaborators. Over the year, build a portfolio of your work and start to contribute to open-source projects.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-pencil"></i>
+				<h5>WORKSHOP</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					Tinker and learn new skills. Expert guests will join us multiple times per week to help you dive into new languages and overcome tricky learning challenges. Workshops won't just be on code. We can get into desk-building, logic, poetry, and occupational health as well.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-messages"></i>
+				<h5>DISCUSS</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					Exchange ideas and start to ask hard questions about your work. Read important texts on the past, present and future of the internet, on hacker culture, and <a href="http://en.wikipedia.org/wiki/Autodidacticism">autodidacticism</a>. Discuss critical questions concerning the future of the open web.
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--END 6 BOXES-->
+	<div class="row">
+		<div class="large-12 columns text-center">
+			<div class="page-header pad-bottom">
+
+			</div>
+
+			<div class="row">
+
+		</div>
+	</div>
+
+
+	<div class="large-12 columns">
+			<p id="about-text">
+				The schedule for the year is, to some degree, up to you and what you want to build. We'll provide the best community and resources we can, but we've realized that if we plan your year <em>for</em> you, you won't be working towards what's next. As <a href="http://smartpei.typepad.com/robert_patersons_weblog/calvinhobbesteach.gif">Calvin says</a> to Miss Wormwood, "You can present the material, but you can't make me care."
+				It's kind of like getting a bulletin in a church service or reading the translation at the Opera. You become a passive audience member with your attention on the content, not your experience. The success of your year requires serious engagement. We want you to help you start your life's work <em>now</em>.
+				Of course, there is something valuable about being able to answer the question "What should I learn next?" We won't give you an entire schedule for the year, but we'll give you a Fieldbook on day one. Instead of setting your year in stone, this book will give you some good ideas on first projects, what to learn next, some texts to read, and highlight some core principles. Think of it as a really awesome "Hacker Scout" handbook.
+
+				We're going to spend a lot of time crafting this Dev.Year Fieldbook before you join us. Not only will it be packed full of great resources, it will provide a basic structure for the Dev.Year community. The Fieldbook will help you set goals for your work and visualize your progress. We're not going to give you any badges for your sash. Sorry. We do hope the Fieldbook finds a permanent spot in your knapsack and gives you an inspiring picture of what's <em>possible</em> with code. Below is a roughly drafted outline of the fieldbook: a three-part guide for starting and an overview of its resources. It's a brief picture of everything you could learn throughout the year. The Fieldbook is, in no small part, inspired by the Boy Scouts of America, ESR's "<a href="http://www.catb.org/esr/faqs/hacker-howto.html#history">How to Become a Hacker</a>" and why's "<a href="http://mislav.uniqpath.com/poignant-guide/">(poignant) guide to ruby</a>". </p>
+		</div>
+
+	</div>
+	<!--END THREE COLUMN TEXT-->
+	<div class="row services-row">
+		<h3>THE FIELDBOOK</h3>
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<br><h5>I. STARTING</h5>
+				<div class="hr large-3 small-3"></div>
+				<p><strong>Learn</strong> what things are and how they work: computer, os, program, server, client, language, internet, url. <strong>Build</strong> a personal site from scratch and setup your workspace: get git and software, build a desk, etc. <strong>Challenge</strong> yourself to find the best help and to fall in love with code. Read hacker FAQs. </p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<h5>II. GOOD THINGS TO DO NEXT</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					<strong>Learn</strong> to use Terminal, publish your personal blog using Git, dig into HTML/CSS, and one dynamic, object-oriented language. Start<strong> building</strong> a web platform using what you've learned. <strong>Challenge</strong> yourself to use design methods in your work and study UX. Start re-writing parts of this fieldbook.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<br><h5>III. KEEP GOING</h5>
+				<div class="hr large-3 small-3"></div>
+				<p><strong>Learn</strong> C and get to know UNIX. Work with another object-oriented language, multiple web frameworks, and JS/JQuery. Help the community <strong>build</strong> an open-source project by becoming a consistent contributor. Start your own project with a team. <strong>Challenge</strong> yourself to write weekly and fall in love with a problem you want to solve.
+				</p>
+			</div>
+		</div>
+			
+	</div>
+	
+	<div class="row services-row">
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<br><h5>IV. CODE</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					A guide of the best resources for learning everything you need. <br><br> Git, Terminal, Systems/Servers, C, Ruby, Python, PHP, web frameworks, JS/JQuery, CSS/SASS/LESS, HTML, Databases, APIs, Testing, text editors, etc.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<br><h5>V. BUILD</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					A guide full of little projects to learn on and ideas for what to build next. <br><br> "Hello World", yourself.com, "Terminal for a Week", Open-Source projects to start on, Arduino, Raspberry Pi, build a web server, etc.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<br><h5>VI. WONDER</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>A guide and compendium of texts that inform the way we work and why. <br><br> Logic, poetry, mathematics, history of computation, history of the web, hacker culture, open source theory, privacy, security, economics, culture, comic books, games, education, etc.
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--END 6 BOXES-->
+
+
+
+
+</section>
+
+<section id="quote-divider">
+	<div class="row">
+		<div class="large-12 columns text-center">
+			<br><br><br><h5 class="text-white">"[The world needs people who] see something that needs to be done and start to do it, without the government’s permission, or official advice, or expert advice, or applying for grants or anything else. They just start doing it.” <br>&#8212; Wendell Berry</h5><br>
+			<div class="hr large-1 small-3"></div><br><br>
+			<a href="apply.html"><div class="btn-wrapper"><div class="btn">APPLY TO DEV.YEAR</div></div></a>
+			<a target="_blank" href="https://twitter.com/intent/user?screen_name=saxifrageschool"><div class="btn-wrapper"><div class="btn"><i class="typcn typcn-social-twitter"></i>FOLLOW</div></div></a><br><br><br><br>
+
+		</div>
+	</div>
+	
+	<div class="row">
+		<!--<div class="large-3 columns client text-center">
+			<img alt="client image" src="http://placehold.it/250x100" />
+		</div>
+		
+		<div class="large-3 columns client text-center">
+			<img alt="client image" src="http://placehold.it/250x100" />
+		</div>
+		
+		<div class="large-3 columns client text-center">
+			<img alt="client image" src="http://placehold.it/250x100" />
+		</div>
+		
+		<div class="large-3 columns client text-center">
+			<img alt="client image" src="http://placehold.it/250x100" />
+		</div>-->
+	
+	</div>
+	
+</section>
+
+<a id="goals-nav"></a>
+<section id="work" class="pad-large">
+
+	<div class="row">
+		<div class="large-12 columns text-center">
+			<div class="page-header pad-bottom">
+				<div class="box-heading">
+					OUR HOPES FOR THE YEAR'S END
+				</div>
+				<h1>GOALS</h1>
+				<div class="hr large-1 small-3"></div>
+			</div>
+		</div>
+	</div>
+	
+<div class="row services-row">
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-beaker"></i>
+				<h5>1. OPEN-SOURCE</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					By the end of the year, we hope every student will be a contributing member of an open-source project.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-lightbulb"></i>
+				<h5>2. PORTFOLIO</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					By the end of the year, we want you to be certified by the community you serve. Your GitHub profile, personal portfolio website, twitter history, and relationships will be a record of your work.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-brush"></i>
+				<h5>3. FULL-STACK</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					A year isn't long enough to master anything, but we really want you to learn some of everything. Working with the full stack with help you see the scope of what you can do and how everything connects: databases, terminal, git, CSS, HTML, JQuery, design methods, testing, APIs, etc.
+				</p>
+			</div>
+		</div>
+		
+	</div>
+	
+	<div class="row services-row">
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-support"></i>
+				<h5>4. DON'T STOP</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					Once the year is over, keep going. While we won't give you the same dedicated attention, you're still part of the community. Stay with us as a mentor, attend workshops, come to meals, and contribute to open source projects. Keep coding with your team and start a company.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-beer"></i>
+				<h5>5. BE A VOICE</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					In order to find your voice you'll have to spend a lot of time reading and listening. Like most technology, the internet has great potential to create and destroy. Be a creative voice and start contributing to the culture and literature of the web.
+				</p>
+			</div>
+		</div>
+		
+		<div class="large-4 columns">
+			<div class="service text-center">
+				<i class="typcn typcn-eye-outline"></i>
+				<h5>6. BE NATIVE</h5>
+				<div class="hr large-3 small-3"></div>
+				<p>
+					The technology and employment opportunities make it easy to be a place-less webworker that works on big universal projects. We think there is serious value is getting to know a place really well. Become native to Pittsburgh and work with other natives to address real local issues.
+				</p>
+			</div>
+		</div>
+		
+	</div>
+
+	
+</section>
+
+<a id="contact-nav"></a>
+<section id="contact">
+
+
+
+
+	<iframe src="https://maps.google.com.au/maps?q=Penn+Avenue+and+Negley+Avenue,+Pittsburgh,+PA,+United+States&amp;hl=en&amp;sll=40.448298,-79.941523&amp;sspn=0.0887,0.161705&amp;hnear=Penn+Ave+%26+S+Negley+Ave,+Pittsburgh,+Allegheny,+Pennsylvania+15206,+United+States&amp;t=p&amp;ie=UTF8&amp;hq=&amp;ll=40.469151,-79.927855&amp;spn=0.022854,0.036478&amp;z=14&amp;output=embed	&amp;iwloc=near"></iframe>
+	<div id="map-toggle" class="btn-wrapper"><div class="btn"><i class="typcn typcn-map"></i>TOGGLE MAP</div></div>
+	
+	<div id="contact-holder">
+		<div class="row">
+			<div class="large-12 columns text-center">
+				<div class="page-header pad-bottom">
+					<div class="box-heading">
+						QUESTIONS?
+					</div>
+					<h1>CONTACT US</h1>
+					<div class="hr large-1 small-3"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--<div class="row">
+			<div class="large-5 columns">
+				<p>
+					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.
+				</p>
+				<ul id="contact-details">
+					<li><i class="typcn typcn-phone">&nbsp;</i>+61 4835 298</li>
+					<li><i class="typcn typcn-mail">&nbsp;</i>hello@barossa.net</li>
+					<li><i class="typcn typcn-location-outline">&nbsp;</i>200 Collins St. Melbourne</li>
+					<li><i class="typcn typcn-social-twitter">&nbsp;</i>@craig800</li>
+				</ul>
+			</div>
+			
+			<div class="large-7 columns">
+				<div id="contact-form">
+					<div id="name">
+						<div class="form-icon">
+							<i class="typcn typcn-user"></i>
+						</div>
+						<input id="form-name" type="text" placeholder="Name" />
+					</div>
+					
+					<div id="email">
+						<div class="form-icon">
+							<i class="typcn typcn-mail"></i>
+						</div>
+						<input id="form-email" type="text" placeholder="Email" />
+					</div>
+					
+					<div id="message">
+						<div class="form-icon">
+							<i class="typcn typcn-pencil"></i>
+						</div>
+						<textarea id="form-message" placeholder="Message"></textarea>
+					</div>
+					<div id="details-error" class="text-white"><i class="typcn typcn-warning">&nbsp;</i>Error: Please ensure all fields are completed correctly</div>
+					<div id="form-sent" class="text-white"><i class="typcn typcn-thumbs-up">&nbsp;</i>Thank you, your message has been sent!</div>
+					<div class="btn-wrapper"><div class="btn">SEND<i class="typcn typcn-arrow-right"></i></div></div>
+				</div>
+			</div>
+		</div>-->
+		
+		<div class="row">
+			<div class="large-12 columns text-center">
+				<div id="footer">
+					<div><h5>E-Mail: <a href="mailto:tim@saxifrageschool.org">tim@saxifrageschool.org</a></h5><br>
+					<div class="hr large-1 small-3"></div>
+					<ul id="footer-social">
+						<li><a href="http://www.twitter.com/saxifrageschool/"><i class="typcn typcn-social-twitter-circular"></i></a></li>
+						<li><a href="https://www.facebook.com/pages/The-Saxifrage-School/217607328251808"><i class="typcn typcn-social-facebook-circular"></i></a></li>
+						<li><a href="http://vimeo.com/34760137"><i class="typcn typcn-social-vimeo-circular"></i></a></li>
+					</ul>
+					<div id="copy-text">&copy;&nbsp;&nbsp;<span class="logo-text">BAROSSA</span>&nbsp;&nbsp;2013</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div><!-- end of contact holder -->
+	
+	
+	
+
+</section>
+
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+  <script src="js/vendor/jquery.js"></script> 
+  <script src="js/foundation.min.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
